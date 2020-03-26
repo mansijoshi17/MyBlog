@@ -17,15 +17,16 @@ const Layout = ({ children }) => {
     query SiteTitleQuery {
       site {
         siteMetadata {
-          title
+          title,
+          icon
         }
       }
     }
   `)
 
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+    <div>
+      <Header siteTitle={data.site.siteMetadata.title}  icon={data.site.siteMetadata.icon}/>
       <div
         style={{
           margin: `0 auto`,
@@ -34,18 +35,13 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
       </div>
-    </>
+    </div>
   )
 }
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+// Layout.propTypes = {
+//   children: PropTypes.node.isRequired,
+// }
 
 export default Layout

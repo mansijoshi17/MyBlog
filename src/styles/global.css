@@ -1,0 +1,49 @@
+html {
+    background-color: #E0EBE8;
+   
+  }
+
+  .container {
+    margin: 0px auto;
+    max-width: 960px;
+    padding: 1.45rem 1.0875rem;
+}
+
+  a.header-title {
+    color: black;
+    text-decoration: none;
+    font-family: 'Sacramento', cursive;
+}
+
+h1.hellomsg, p.hellomsg{
+    font-family: 'Sacramento', cursive;
+    font-size: 40px;
+    line-height: 65px;
+}
+
+a.hellomsg{
+    color: #22a889;
+    font-family: 'Sacramento', cursive;
+    font-size: 40px;
+    line-height: 45px;
+    text-decoration: none;
+}
+
+.desfont {
+    font-family: 'Special Elite', cursive;
+}
+
+.blogs {
+    margin-top: 80px;
+}
+
+li.post {
+    padding-bottom: 45px;
+}
+
+a.post {
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+}

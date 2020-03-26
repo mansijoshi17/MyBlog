@@ -1,20 +1,48 @@
+
+
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Mansi's Blog`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
+    icon: 'https://img.icons8.com/bubbles/100/000000/popular-woman.png'
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Sacramento`,
+            subsets: [`latin`],
+          },
+          {
+            family: `Special Elite`,
+            variants: [`400`, `700`]
+          },
+        ],
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
-      },
+      }
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdowns`,
+        path: `${__dirname}/src/markdown-pages`,
+      }
+    },
+  
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -27,6 +55,7 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
