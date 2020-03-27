@@ -63,7 +63,7 @@ a.post {
   background-size: cover;
 }
 
-.parallax-second{
+.second-parallax{
     background-image: url("https://cdn.pixabay.com/photo/2017/09/05/10/20/business-2717066_960_720.jpg");
 
     /* Set a specific height */

@@ -36,7 +36,7 @@ const Layout = ({ children }) => {
       >
         <main style={{marginTop:'30px'}}>{children}</main>
       </div>
-      <div className="parallax-second"></div>
+      <div className="second-parallax"></div>
       
     </div>
   )
