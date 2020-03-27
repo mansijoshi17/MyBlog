@@ -1,8 +1,3 @@
-
-module.exports = {
-  pathPrefix: "/MyBlog",
-}
-
 module.exports = {
   siteMetadata: {
     title: `Mansi's Blog`,
