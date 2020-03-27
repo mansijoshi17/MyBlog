@@ -26,7 +26,8 @@ const Layout = ({ children }) => {
 
   return (
     <div>
-      <Header siteTitle={data.site.siteMetadata.title}  icon={data.site.siteMetadata.icon}/>
+      <Header siteTitle={data.site.siteMetadata.title} icon={data.site.siteMetadata.icon} />
+      <div className="parallax"></div>
       <div
         style={{
           margin: `0 auto`,
@@ -34,8 +35,9 @@ const Layout = ({ children }) => {
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
-        <main>{children}</main>
+        <main style={{ marginTop: '30px' }}>{children}</main>
       </div>
+      <div className="parallax-second"></div>
     </div>
   )
 }

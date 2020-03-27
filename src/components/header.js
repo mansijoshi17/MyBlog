@@ -8,8 +8,9 @@ const Header = ({ siteTitle, icon }) => (
       style={{
         margin: `0 auto`,
         maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-        display:'flex'
+        padding: `0 1.0875rem`,
+        display:'flex',
+        maxHeight:'100px'
       }}
     >
       <h1>
