@@ -8,7 +8,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <div className="description">
-      <h1 className="hellomsg">Hi people!!</h1>
+      <h1 className="hellomsg">Hi people!! Peoples</h1>
       <p className="hellomsg">Welcome to my blog, I am Mansi. I'm a web designer / developer based in Ahmedabad, India. I have a passion for web design and developement. </p>
   
      <Link className="hellomsg" to="/Bloglist">Click here to read my thoughts on some technologies.</Link>
