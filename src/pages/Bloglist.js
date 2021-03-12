@@ -12,7 +12,7 @@ const BlogList = ({ data }) => {
           {
             data.allMarkdownRemark.edges.map((node,index) => {
               return <li key={index} className="post">
-                <h3 className="post desfont" >{node.node.frontmatter.title}-{node.node.frontmatter.date}</h3>
+                <Link className="post desfont" to={node.node.fields.slug}>{node.node.frontmatter.title}-{node.node.frontmatter.date}</Link>
                 <p className="desfont" style={{marginTop:'20px'}}>{node.node.frontmatter.description}</p>
               </li>
             })
