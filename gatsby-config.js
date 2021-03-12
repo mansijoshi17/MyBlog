@@ -10,22 +10,9 @@ module.exports = {
     author: `@gatsbyjs`,
     icon: 'https://img.icons8.com/bubbles/100/000000/popular-woman.png'
   },
+  
   plugins: [
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Sacramento`,
-            subsets: [`latin`],
-          },
-          {
-            family: `Special Elite`,
-            variants: [`400`, `700`]
-          },
-        ],
-      },
-    },
+    
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

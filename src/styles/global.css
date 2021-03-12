@@ -12,26 +12,24 @@ html {
   a.header-title {
     color: black;
     text-decoration: none;
-    font-family: 'Sacramento', cursive;
+   
 }
 
 h1.hellomsg, p.hellomsg{
-    font-family: 'Sacramento', cursive;
+    
     font-size: 40px;
     line-height: 65px;
 }
 
 a.hellomsg{
     color: #22a889;
-    font-family: 'Sacramento', cursive;
+  
     font-size: 40px;
     line-height: 45px;
     text-decoration: none;
 }
 
-.desfont {
-    font-family: 'Special Elite', cursive;
-}
+
 
 .blogs {
     margin-top: 80px;
