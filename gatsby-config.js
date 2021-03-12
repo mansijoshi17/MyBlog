@@ -1,6 +1,9 @@
 
 module.exports = {
-  pathPrefix: "/MyBlog",
+  pathPrefix: 'myblog',
+  plugins: [
+      'gatsby-plugin-ipfs',
+  ]
 }
 
 module.exports = {
