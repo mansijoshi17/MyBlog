@@ -12,7 +12,7 @@ export default ({ data }) => {
                 <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
             </div>
 
-            <Link to="/Bloglist">
+            <Link to="ipfs/QmWTZChz5eYNDZtqW53VdYPgcCru7Xqt2e8f3airHjvbEe/Bloglist">
                 <img src="https://img.icons8.com/bubbles/100/000000/circled-left.png" />
             </Link>
         </Layout>
