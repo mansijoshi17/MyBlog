@@ -1,8 +1,18 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { Link, graphql,useStaticQuery } from "gatsby"
+
+
 
 
 const BlogList = ({ data }) => {
+
+  const data = useStaticQuery(graphql`
+  query SiteTitleQuery {
+    site {
+      pathPrefix 
+    }
+  }
+`)
 
   return (
     <div className="container">
@@ -12,7 +22,7 @@ const BlogList = ({ data }) => {
           {
             data.allMarkdownRemark.edges.map((node,index) => {
               return <li key={index} className="post">
-                <Link className="post desfont" to={node.node.fields.slug}>{node.node.frontmatter.title}-{node.node.frontmatter.date}</Link>
+                <Link className="post desfont" to={data.site.pathPrefix + node.node.fields.slug}>{node.node.frontmatter.title}-{node.node.frontmatter.date}</Link>
                 <p className="desfont" style={{marginTop:'20px'}}>{node.node.frontmatter.description}</p>
               </li>
             })
