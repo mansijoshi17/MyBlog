@@ -1,6 +1,6 @@
 
 module.exports = {
-  pathPrefix: './ipfs/QmWTZChz5eYNDZtqW53VdYPgcCru7Xqt2e8f3airHjvbEe/',
+  pathPrefix: 'https://ipfs.fleek.co/ipfs/QmQ2guPKgp2KR1FkukTzLtETphEePpRbtA7gpA7wUTmiHi',
   plugins: [
       'gatsby-plugin-ipfs',
   ]
