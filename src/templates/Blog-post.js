@@ -1,18 +1,9 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
 import Layout from '../components/layout';
-import { useStaticQuery, graphql } from "gatsby"
 
 export default ({ data }) => {
     const post = data.markdownRemark
-
-    const pathData = useStaticQuery(graphql`
-  query SiteTitleQuery {
-    site {
-      pathPrefix 
-    }
-  }
-`)
 
     return (
         <Layout>
@@ -21,7 +12,7 @@ export default ({ data }) => {
                 <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
             </div>
 
-            <Link to={`${pathData.site.pathPrefix}/Bloglist`}>
+            <Link to="/BlogList">
                 <img src="https://img.icons8.com/bubbles/100/000000/circled-left.png" />
             </Link>
         </Layout>

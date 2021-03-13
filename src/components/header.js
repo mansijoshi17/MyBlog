@@ -2,19 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-import { useStaticQuery, graphql } from "gatsby"
-
-const Header = ({ siteTitle, icon }) => {
-
-  const data = useStaticQuery(graphql`
-  query SiteTitleQuery {
-    site {
-      pathPrefix 
-    }
-  }
-`)
-
-return (
+const Header = ({ siteTitle, icon }) => (
   <>
     <div
       style={{
@@ -30,7 +18,7 @@ return (
       </h1>
       <h1 style={{ marginTop: '30px' }} >
         <Link
-          to={`${data.site.pathPrefix}`}
+          to="/"
           className="header-title"
         >
           {siteTitle}
@@ -40,7 +28,6 @@ return (
   </>
 
 )
-    }
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
