@@ -1,9 +1,6 @@
 
 module.exports = {
   pathPrefix: `/ipfs/QmQvvLrie9Yq5dbc9zr6PmPR6bCgwqvwhJ1LBXzcQpFZ8s`,
-  plugins: [
-      'gatsby-plugin-ipfs',
-  ]
 }
 
 module.exports = {
